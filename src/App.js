@@ -9,7 +9,8 @@ class App extends Component {
 
     this.state = {
       quote: '',
-      image: ''
+      image: '',
+      background: '#FFFFFF'
     }
   }
 
@@ -24,13 +25,18 @@ class App extends Component {
       }
     })
     .then((res) => res.json())
-    .then((data) => this.setState({quote: data.results.text, image: require(`./images/${character}.jpg`)}))
+    .then((data) => this.setState({
+      quote: data.results.text,
+      image: require(`./images/${character}.jpg`),
+      background: '#EB8834'
+    })
+    )
   }
 
   render() {
     return (
-      <div>
-        <div className='top-container'>
+    <div className='app' style={{backgroundColor: this.state.background}}>
+      <div className='top-container'>
           { this.state.image ? <Image self={this.state.image}/> : ''}
           <div className='btn-container'>
             <h3> Choose Character</h3>
