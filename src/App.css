@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  box-sizing: border-box;
+}
+
+.quote,
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+}
+.quote {
+  background-color: #EB8834;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.quote h3 {
+  align-items: center;
+  font-family: Lato;
+  width: 60%;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 2em;
+  color: #FFFFFF;
+}
+
+.top-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  width: 50%;
+  height: auto;
+}
+
+.image-container img {
+  margin-left: 50px;
+  max-width: 625px;
+  height: auto;
+}
+
+.btn-container {
+  margin-top: -20px;
+  width: 50%;
+  font-family: Lato;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-container button,
+.btn-container h3 {
+  margin: 0 auto;
+  border: none;
+}
+
+.btn-container button:focus {
+  outline: 0;
+  background-color: #EB8834;
+}
+
+.btn-container h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #EB8834;
+}
+
+.btn-container button {
+  width: 280px;
+  height: 42px;
+  background-color: #000000;
+  display: block;
+  margin: 12px auto;
+  font-size: 20px;
+  color: #FFF;
+}
